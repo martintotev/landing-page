@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="freeCodeCamp Project - Landing Page">
     <meta name="author" content="Martin Totev">
-
+    
+    <!-- CSS link -->
+    <link rel="stylesheet" href="landing-page.css">
+    
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700|Dosis:300|Open+Sans|Playfair+Display:700"
         rel="stylesheet">
@@ -16,123 +19,128 @@
 </head>
 
 <body>
-    <header id="header">
-        <div id="logo-cont" class="logo">
-            <img id="header-imhg" src="/assets/logo.svg" alt="John Foster Burgers Logo" style="width: 150px;">
+    <div id="page-wrapper">
+        <header id="header">
+            <div id="logo-cont" class="logo">
+                <img id="header-imhg" src="/assets/logo.svg" alt="John Foster Burgers Logo" style="width: 150px;">
+            </div>
+
+            <nav id="navigation">
+                <ul>
+                    <li><a class="nav-link" href="#ingredients">About Us</a></li>
+                    <li><a class="nav-link" href="#promo-video">Video</a></li>
+                    <li><a class="nav-link" href="#reservation">Reservations</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <div class="container">
+            <section id="about-us">
+                <div class="grid">
+                    <div class="icons">
+                        <i class="fas fa-apple-alt"></i>
+                    </div>
+                    <div class="description">
+                        <h2>Always fresh ingredients</h2>
+                        <p>Our kitchen always utilizes the freshest ingredients, thus providing the best taste for our
+                            clients. All the ingredients are locally grown and brought to the kitchen prior to being
+                            cooked, straight from the farm. We have a diverse menu, thus recieve 3 batches a day of the
+                            freshed products.</p>
+                    </div>
+                    <div class="icons">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <div class="descrpition">
+                        <h2>The best dining experience</h2>
+                        <p>We are proud to be the number 1 fine dining in the city, with the best dining experience one
+                            could desire. If you are disapointed with the taste, we can't turn the clock back but we
+                            can
+                            offer you a discount.</p>
+                    </div>
+                    <div class="icons">
+                        <i class="fab fa-accessible-icon"></i>
+                    </div>
+                    <div class="description">
+                        <h2>Accesible to everyone</h2>
+                        <p>We welcome everyone who wants to take his taste buds to an adventure of a lifetime. We do
+                            not
+                            discriminate and we are firmly against any type of discrimination and harassment based on
+                            race,
+                            religion, beliefs, sex and preferences.</p>
+                    </div>
+                </div>
+            </section>
         </div>
 
-        <nav id="navigation">
-            <ul>
-                <li><a class="nav-link" href="#ingredients">About Us</a></li>
-                <li><a class="nav-link" href="#promo-video">Video</a></li>
-                <li><a class="nav-link" href="#reservation">Reservations</a></li>
-            </ul>
-        </nav>
+        <section id="promo-video">
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/x0EYpi38Yp4" frameborder="0"
+                allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </section>
 
-    </header>
-
-    <div class="container">
-        <section id="about-us">
-            <div class="grid">
-                <div class="icons">
-                    <i class="fas fa-apple-alt"></i>
+        <section id="newsletter">
+            <h2>Subscribe to our newsletter and stay up to date with our menu every day</h2>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input type="email" id="email" name="email" placeholder="Type your email address here" required />
+                <input id="submit" type="submit" class="btn" placeholder="Subscribe to Newsletter">
+            </form>
+        </section>
+        <section id="reservations">
+            <h1>Make a reservation</h1>
+            <div id="morning">
+                <div id="breakfast-menu">
+                    Breakfast Menu
                 </div>
-                <div class="description">
-                    <h2>Always fresh ingredients</h2>
-                    <p>Our kitchen always utilizes the freshest ingredients, thus providing the best taste for our
-                        clients. All the ingredients are locally grown and brought to the kitchen prior to being
-                        cooked, straight from the farm. We have a diverse menu, thus recieve 3 batches a day of the
-                        freshed products.</p>
+                <h2>From 07:30 to 10:00</h2>
+                <ul>
+                    <li>Fresh Coffee & Tea</li>
+                    <li>Freshly baked bread with butter and marmalade</li>
+                    <li>Fresh organic fruits</li>
+                    <li>Milk & Cereal</li>
+                </ul>
+                <button class="btn">Reserve</button>
+            </div>
+            <div id="lunch">
+                <div id="lunch-menu">
+                    Lunch Menu
                 </div>
-                <div class="icons">
-                    <i class="fas fa-utensils"></i>
+                <h2>From 12:00 to 14:00</h2>
+                <ul>
+                    <li>Vegetable Soup</li>
+                    <li>Meat/Veggie Burger</li>
+                    <li>Oven baked fish with veggies</li>
+                    <li>Ice cream</li>
+                </ul>
+                <button class="btn">Reserve</button>
+            </div>
+            <div id="dinner">
+                <div id="dinner-menu">
+                    Dinner Menu
                 </div>
-                <div class="descrpition">
-                    <h2>The best dining experience</h2>
-                    <p>We are proud to be the number 1 fine dining in the city, with the best dining experience one
-                        could desire. If you are disapointed with the taste, we can't turn the clock back but we can
-                        offer you a discount.</p>
-                </div>
-                <div class="icons">
-                    <i class="fab fa-accessible-icon"></i>
-                </div>
-                <div class="description">
-                    <h2>Accesible to everyone</h2>
-                    <p>We welcome everyone who wants to take his taste buds to an adventure of a lifetime. We do not
-                        discriminate and we are firmly against any type of discrimination and harassment based on race,
-                        religion, beliefs, sex and preferences.</p>
-                </div>
+                <h2>From 18:00 to 22:30</h2>
+                <ul>
+                    <li>Potato puree with brocolli or bacon</li>
+                    <li>Fresh organic sheperds salad</li>
+                    <li>Grilled steak with veggies and fries</li>
+                    <li>Choclate mousse</li>
+                </ul>
+                <button class="btn">Reserve</button>
             </div>
         </section>
+        <footer class="footer">
+            <ul id="footer-sitemap">
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Privacy & Terms</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <ul id="social-accounts">
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+            <span>Copyright 2018, Martin Totev</span>
+        </footer>
     </div>
-
-    <section id="promo-video">
-        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/x0EYpi38Yp4" frameborder="0"
-            allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </section>
-
-    <section id="newsletter">
-        <h2>Subscribe to our newsletter and stay up to date with our menu every day</h2>
-        <form id="form" action="https://www.freecodecamp.com/email-submit">
-            <input type="email" id="email" name="email" placeholder="Type your email address here" required />
-            <input id="submit" type="submit" class="btn" placeholder="Subscribe to Newsletter">
-        </form>
-    </section>
-    <section id="reservations">
-        <h1>Make a reservation</h1>
-        <div id="morning">
-            <div id="breakfast-menu">
-                Breakfast Menu
-            </div>
-            <h2>From 07:30 to 10:00</h2>
-            <ul>
-                <li>Fresh Coffee & Tea</li>
-                <li>Freshly baked bread with butter and marmalade</li>
-                <li>Fresh organic fruits</li>
-                <li>Milk & Cereal</li>
-            </ul>
-            <button class="btn">Reserve</button>
-        </div>
-        <div id="lunch">
-            <div id="lunch-menu">
-                Lunch Menu
-            </div>
-            <h2>From 12:00 to 14:00</h2>
-            <ul>
-                <li>Vegetable Soup</li>
-                <li>Meat/Veggie Burger</li>
-                <li>Oven baked fish with veggies</li>
-                <li>Ice cream</li>
-            </ul>
-            <button class="btn">Reserve</button>
-        </div>
-        <div id="dinner">
-            <div id="dinner-menu">
-                Dinner Menu
-            </div>
-            <h2>From 18:00 to 22:30</h2>
-            <ul>
-                <li>Potato puree with brocolli or bacon</li>
-                <li>Fresh organic sheperds salad</li>
-                <li>Grilled steak with veggies and fries</li>
-                <li>Choclate mousse</li>
-            </ul>
-            <button class="btn">Reserve</button>
-        </div>
-    </section>
-    <footer class="footer">
-        <ul id="footer-sitemap">
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Privacy & Terms</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        <ul id="social-accounts">
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
-        </ul>
-        <span>Copyright 2018, Martin Totev</span>
-    </footer>
 </body>
 
 </html>
