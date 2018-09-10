@@ -22,14 +22,14 @@
     <div id="page-wrapper">
         <header id="header">
             <div id="logo-cont" class="logo">
-                <img id="header-img" src="/assets/logo.svg" alt="John Foster Burgers Logo" style="width: 150px;">
+                <img class="img" id="header-img" src="/assets/logo.svg" alt="John Foster Burgers Logo" style="width: 150px;">
             </div>
 
             <nav id="nav-bar">
                 <ul>
-                    <li><a class="nav-link" href="#ingredients">About Us</a></li>
+                    <li><a class="nav-link" href="#about-us">About Us</a></li>
                     <li><a class="nav-link" href="#promo-video">Video</a></li>
-                    <li><a class="nav-link" href="#reservation">Reservations</a></li>
+                    <li><a class="nav-link" href="#reservations">Reservations</a></li>
                 </ul>
             </nav>
 
@@ -41,7 +41,7 @@
                     <div class="icons">
                         <i class="fas fa-apple-alt"></i>
                     </div>
-                    <div class="description">
+                    <div class="desc">
                         <h2>Always fresh ingredients</h2>
                         <p>Our kitchen always utilizes the freshest ingredients, thus providing the best taste for our
                             clients. All the ingredients are locally grown and brought to the kitchen prior to being
@@ -51,7 +51,7 @@
                     <div class="icons">
                         <i class="fas fa-utensils"></i>
                     </div>
-                    <div class="descrpition">
+                    <div class="desc">
                         <h2>The best dining experience</h2>
                         <p>We are proud to be the number 1 fine dining in the city, with the best dining experience one
                             could desire. If you are disapointed with the taste, we can't turn the clock back but we
@@ -61,7 +61,7 @@
                     <div class="icons">
                         <i class="fab fa-accessible-icon"></i>
                     </div>
-                    <div class="description">
+                    <div class="desc">
                         <h2>Accesible to everyone</h2>
                         <p>We welcome everyone who wants to take his taste buds to an adventure of a lifetime. We do
                             not
@@ -85,27 +85,30 @@
                 <input id="submit" type="submit" class="btn" placeholder="Subscribe to Newsletter">
             </form>
         </section>
-        <section id="reservations">
+        <div id="reserv-title">
             <h1>Make a reservation</h1>
+        </div>
+        <section id="reservations">
+
             <div id="morning">
-                <div id="breakfast-menu">
+                <div class="menu-title">
                     Breakfast Menu
                 </div>
                 <h2>From 07:30 to 10:00</h2>
-                <ul>
+                <ul class="menu-list">
                     <li>Fresh Coffee & Tea</li>
-                    <li>Freshly baked bread with butter and marmalade</li>
+                    <li>Fresh bread with marmalade</li>
                     <li>Fresh organic fruits</li>
                     <li>Milk & Cereal</li>
                 </ul>
                 <button class="btn">Reserve</button>
             </div>
             <div id="lunch">
-                <div id="lunch-menu">
+                <div class="menu-title">
                     Lunch Menu
                 </div>
                 <h2>From 12:00 to 14:00</h2>
-                <ul>
+                <ul class="menu-list">
                     <li>Vegetable Soup</li>
                     <li>Meat/Veggie Burger</li>
                     <li>Oven baked fish with veggies</li>
@@ -114,11 +117,11 @@
                 <button class="btn">Reserve</button>
             </div>
             <div id="dinner">
-                <div id="dinner-menu">
+                <div class="menu-title">
                     Dinner Menu
                 </div>
                 <h2>From 18:00 to 22:30</h2>
-                <ul>
+                <ul class="menu-list">
                     <li>Potato puree with brocolli or bacon</li>
                     <li>Fresh organic sheperds salad</li>
                     <li>Grilled steak with veggies and fries</li>

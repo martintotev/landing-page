@@ -29,7 +29,7 @@ a {
 }
 
 .container {
-    max-width: 870px;
+    max-width: 1440px;
     width: 100%;
     margin: 0 auto;
 }
@@ -59,41 +59,50 @@ header {
     justify-content: space-around;
     align-items: center;
     background-color: #1ec43d;
+    width: 100%;
+}
 
-    @media (max-width: 600px) {
+@media (max-width: 1280px) {
+    [class="header"] {
         flex-wrap: wrap;
     }
 }
 
 .logo {
     width: 60vw;
+}
 
-    @media (max-width: 830px) {
-        margin-top: 16px;
+@media (max-width: 960px) {
+    [class="logo"] {
+        margin-top: 8px;
         width: 100%;
         position: relative;
     }
+}
 
-    img {
-        width: 100%;
-        height: 100%;
-        max-width: 300px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin-left: 24px;
+.logo img {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 32px;
+}
 
-        @media (max-width: 650px) {
-            margin: 0 auto;
-        }
+@media (max-width: 960px) {
+    [class="img"] {
+        margin: 0 auto;
     }
 }
 
 nav {
     font-weight: 400;
+}
 
-    @media (max-width: 650px) {
+@media (max-width: 960px) {
+    [id="nav-bar"] {
         margin-top: 10px;
         width: 100%;
         display: flex;
@@ -101,20 +110,218 @@ nav {
         align-items: center;
         text-align: center;
         padding: 0 52px;
+    }
+}
 
-        li {
-            padding-bottom: 5px;
-        }
+nav ul li {
+    padding-bottom: 5px;
+}
+
+nav ul {
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media (max-width: 960px) {
+    [id="nav-bar"] {
+        flex-direction: column;
+    }
+}
+
+/* About Us */
+#about-us {
+    margin-top: 12rem;
+}
+
+#about-us .icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    width: 20vw;
+    color: #1ec43d;
+}
+
+@media (max-width: 550px) {
+    [class="icons"] {
+        display: none;
+    }
+}
+
+#about-us .desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 125px;
+    width: 80vw;
+    padding: 5px;
+}
+
+@media (max-width: 550px) {
+    [class="desc"] {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        height: 150px;
+    }
+}
+
+@media (max-width: 650px) {
+    [id="about-us"] {
+        margin-top: 0;
+    }
+}
+
+/* Promo Video */
+#promo-video {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+#video iframe {
+    max-width: 560px;
+    width: 100%;
+}
+
+/* Newsletter */
+#newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+    margin-top: 50px;
+}
+
+#newsletter h2 {
+    margin-bottom: 20px;
+    word-wrap: break-word;
+}
+
+#newsletter input[type="email"] {
+    max-width: 275px;
+    width: 100%;
+    padding: .5em;
+    text-align: center;
+}
+
+#newsletter input[type="submit"] {
+    max-width: 120px;
+    width: 100%;
+    height: 60px;
+    margin: 30px 0;
+    border: 1;
+    background-color: #f8f9fa;
+}
+
+#newsletter input[type="submit"]:hover {
+    background-color: #1ec43d;
+    transition: background-color .3s;
+}
+
+@media (max-width: 650px) {
+    [id="newsletter"] {
+        margin-top: 120px;
+    }
+}
+
+/* Reservations */
+#reservations {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+            justify-content: center;
+}
+
+#reservations #morning {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+
+#reservations #lunch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+#reservations #dinner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+
+#reservations .menu-title {
+    background-color: #1ec43d;
+    color: #000;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+#reservations h2 {
+    text-align: left;
+    margin-top: 15px;
+}
+
+#reservations .menu-list {
+    text-align: left;
+}
+
+#reservations ol {
+    margin: 15px 0;
+}
+
+#reservations li {
+    padding: 5px 0;
+}
+
+#reservations .btn {
+    border: 1;
+    margin: 15px 0;
+    background-color: #f8f9fa;
+    font-weight: 400;
+}
+
+#reservations [class="btn"]:hover {
+    background-color: #1ec43d;
+    transition: background-color .3s;
+}
+
+@media (max-width: 960px) {
+    [id="reservations"] {
+        flex-direction: column;
     }
 
-    ul {
-        width: 35vw;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-
-        @media (max-width: 650px) {
-            flex-direction: column
-        }
+    [id="morning, lunch, dinner"] {
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
     }
+}
+
+#reserv-title {
+    width: 0 auto;
+    text-align: center;
+    margin-top: 60px;
 }
