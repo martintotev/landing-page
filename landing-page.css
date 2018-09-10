@@ -53,7 +53,7 @@ a {
 header {
     position: fixed;
     top: 0;
-    min-height: 64px;
+    min-height: 72pt;
     padding: 0px 24px;
     display: flex;
     justify-content: space-around;
@@ -62,8 +62,8 @@ header {
     width: 100%;
 }
 
-@media (max-width: 1280px) {
-    [class="header"] {
+@media (max-width:600pt) {
+    header {
         flex-wrap: wrap;
     }
 }
@@ -72,27 +72,29 @@ header {
     width: 60vw;
 }
 
-@media (max-width: 960px) {
-    [class="logo"] {
-        margin-top: 8px;
+@media (max-width: 600pt) {
+    .logo {
+        margin-top: 16pt;
         width: 100%;
         position: relative;
     }
 }
 
-.logo img {
-    width: 100%;
-    height: 100%;
-    max-width: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-left: 32px;
+@media (max-width: 600pt) {
+    .logo img {
+        width: 100%;
+        height: 100%;
+        max-width: 300pt;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 32pt;
+    }
 }
 
-@media (max-width: 960px) {
-    [class="img"] {
+@media (max-width: 600pt) {
+    .logo img {
         margin: 0 auto;
     }
 }
@@ -101,51 +103,53 @@ nav {
     font-weight: 400;
 }
 
-@media (max-width: 960px) {
-    [id="nav-bar"] {
-        margin-top: 10px;
+@media (max-width: 600pt) {
+    nav {
+        margin-top: 8pt;
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding: 0 52px;
+        padding: 0 52pt;
     }
 }
 
-nav ul li {
-    padding-bottom: 5px;
+@media (max-width: 600pt) {
+    nav ul li {
+        padding-bottom: 4px;
+    }
 }
 
 nav ul {
-    width: 35vw;
+    width: 32vw;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-@media (max-width: 960px) {
-    [id="nav-bar"] {
+@media (max-width: 600pt) {
+    nav ul {
         flex-direction: column;
     }
 }
 
 /* About Us */
 #about-us {
-    margin-top: 12rem;
+    margin-top: 148pt;
 }
 
 #about-us .icons {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 125px;
-    width: 20vw;
+    height: 148pt;
+    width: 16vw;
     color: #1ec43d;
 }
 
-@media (max-width: 550px) {
-    [class="icons"] {
+@media (max-width: 480pt) {
+    #about-us .icons {
         display: none;
     }
 }
@@ -159,8 +163,10 @@ nav ul {
     padding: 5px;
 }
 
+/* Continnue from here */
+
 @media (max-width: 550px) {
-    [class="desc"] {
+    #about-us .desc {
         width: 100%;
         text-align: center;
         padding: 0;
@@ -234,7 +240,7 @@ nav ul {
     margin-top: 20px;
     display: flex;
     flex-direction: row;
-            justify-content: center;
+    justify-content: center;
 }
 
 #reservations #morning {
@@ -258,6 +264,7 @@ nav ul {
     border: 1px solid #000;
     border-radius: 3px;
 }
+
 #reservations #dinner {
     display: flex;
     flex-direction: column;
