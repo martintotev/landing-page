@@ -27,7 +27,7 @@
 
             <nav id="nav-bar">
                 <ul>
-                    <li><a class="nav-link" href="#about-us">About Us</a></li>
+                    <li><a class="nav-link" href="#about-us">About</a></li>
                     <li><a class="nav-link" href="#promo-video">Video</a></li>
                     <li><a class="nav-link" href="#reservations">Reservations</a></li>
                 </ul>
@@ -37,6 +37,7 @@
 
         <div class="container">
             <section id="about-us">
+                <h1>About Us</h1>
                 <div class="grid">
                     <div class="icons">
                         <i class="fas fa-apple-alt"></i>
@@ -48,6 +49,8 @@
                             cooked, straight from the farm. We have a diverse menu, thus recieve 3 batches a day of the
                             freshed products.</p>
                     </div>
+                </div>
+                <div class="grid">
                     <div class="icons">
                         <i class="fas fa-utensils"></i>
                     </div>
@@ -58,6 +61,8 @@
                             can
                             offer you a discount.</p>
                     </div>
+                </div>
+                <div class="grid">
                     <div class="icons">
                         <i class="fab fa-accessible-icon"></i>
                     </div>
@@ -70,79 +75,88 @@
                             religion, beliefs, sex and preferences.</p>
                     </div>
                 </div>
-            </section>
         </div>
-
-        <section id="promo-video">
-            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/oxsRdY71E_4" frameborder="0" allow="autoplay; encrypted-media"
-                allowfullscreen></iframe>
         </section>
+    </div>
 
-        <section id="newsletter">
-            <h2>Subscribe to our newsletter and stay up to date with our menu every day</h2>
-            <form id="form" action="https://www.freecodecamp.com/email-submit">
-                <input type="email" id="email" name="email" placeholder="Type your email address here" required />
-                <input id="submit" type="submit" class="btn" placeholder="Subscribe to Newsletter">
-            </form>
-        </section>
-        <div id="reserv-title">
-            <h1>Make a reservation</h1>
+    <section id="promo-video">
+        <h1>Promotion Video</h1>
+        <iframe id="video" width="720" height="405" src="https://www.youtube.com/embed/oxsRdY71E_4" frameborder="0"
+            allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </section>
+
+    <section id="newsletter">
+        <h1>Subscribe to our Newsletter</h1>
+        <h2>for daily menu updates</h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <input type="email" id="email" name="email" placeholder="Type your email address here" required />
+            <input id="submit" type="submit" class="btn" placeholder="Subscribe to Newsletter">
+        </form>
+    </section>
+    <div id="reserv-title">
+        <h1>Make a reservation</h1>
+    </div>
+    <section id="reservations">
+
+        <div id="morning">
+            <div class="menu-title">
+                Breakfast
+            </div>
+            <h2>From 07:30 to 10:00</h2>
+            <ul class="menu-list">
+                <li>Fresh Coffee & Tea</li>
+                <li>Fresh bread with marmalade</li>
+                <li>Fresh organic fruits</li>
+                <li>Milk & Cereal</li>
+            </ul>
+            <button class="btn">Reserve</button>
         </div>
-        <section id="reservations">
-
-            <div id="morning">
-                <div class="menu-title">
-                    Breakfast Menu
-                </div>
-                <h2>From 07:30 to 10:00</h2>
-                <ul class="menu-list">
-                    <li>Fresh Coffee & Tea</li>
-                    <li>Fresh bread with marmalade</li>
-                    <li>Fresh organic fruits</li>
-                    <li>Milk & Cereal</li>
-                </ul>
-                <button class="btn">Reserve</button>
+        <div id="lunch">
+            <div class="menu-title">
+                Lunch
             </div>
-            <div id="lunch">
-                <div class="menu-title">
-                    Lunch Menu
-                </div>
-                <h2>From 12:00 to 14:00</h2>
-                <ul class="menu-list">
-                    <li>Vegetable Soup</li>
-                    <li>Meat/Veggie Burger</li>
-                    <li>Oven baked fish with veggies</li>
-                    <li>Ice cream</li>
-                </ul>
-                <button class="btn">Reserve</button>
+            <h2>From 12:00 to 14:00</h2>
+            <ul class="menu-list">
+                <li>Vegetable Soup</li>
+                <li>Meat/Veggie Burger</li>
+                <li>Oven baked fish with veggies</li>
+                <li>Ice cream</li>
+            </ul>
+            <button class="btn">Reserve</button>
+        </div>
+        <div id="dinner">
+            <div class="menu-title">
+                Dinner
             </div>
-            <div id="dinner">
-                <div class="menu-title">
-                    Dinner Menu
-                </div>
-                <h2>From 18:00 to 22:30</h2>
-                <ul class="menu-list">
-                    <li>Potato puree with brocolli or bacon</li>
-                    <li>Fresh organic sheperds salad</li>
-                    <li>Grilled steak with veggies and fries</li>
-                    <li>Choclate mousse</li>
-                </ul>
-                <button class="btn">Reserve</button>
-            </div>
-        </section>
-        <footer class="footer">
+            <h2>From 18:00 to 22:30</h2>
+            <ul class="menu-list">
+                <li>Potato puree and brocolli</li>
+                <li>Organic sheperds salad</li>
+                <li>Grilled steak with veggies</li>
+                <li>Choclate mousse</li>
+            </ul>
+            <button class="btn">Reserve</button>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="grid">
             <ul id="footer-sitemap">
                 <li><a href="#">Menu</a></li>
                 <li><a href="#">Privacy & Terms</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
+        </div>
+        <div class="grid">
             <ul id="social-accounts">
                 <li><a href="#">Twitter</a></li>
                 <li><a href="#">Facebook</a></li>
                 <li><a href="#">Instagram</a></li>
             </ul>
+        </div>
+        <div class="grid">
             <span>Copyright 2018, Martin Totev</span>
-        </footer>
+        </div>
+    </footer>
     </div>
 </body>
 

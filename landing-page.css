@@ -15,6 +15,11 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+h1 {
+    font-size: 32pt;
+    font-weight: 900;
+}
+
 #page-wrapper {
     position: relative;
 }
@@ -29,19 +34,19 @@ a {
 }
 
 .container {
-    max-width: 1440px;
+    max-width: 1440pt;
     width: 100%;
     margin: 0 auto;
 }
 
 .btn {
     background: transparent;
-    border: 1px black solid;
-    border-radius: 16px;
+    border: 1pt #ced4da solid;
+    border-radius: 8pt;
     cursor: pointer;
     font-size: 1.1em;
-    font-weight: 100;
-    height: 48px;
+    font-weight: 400;
+    height: 32pt;
     text-transform: uppercase;
     padding: 0 24px;
 }
@@ -51,6 +56,8 @@ a {
 }
 
 header {
+    font-family: 'Dosis';
+    font-weight: bolder;
     position: fixed;
     top: 0;
     min-height: 72pt;
@@ -62,25 +69,21 @@ header {
     width: 100%;
 }
 
-@media (max-width:600pt) {
-    header {
-        flex-wrap: wrap;
-    }
-}
-
 .logo {
     width: 60vw;
 }
 
-@media (max-width: 600pt) {
+@media (max-width:600pt) {
+    header {
+        flex-wrap: wrap;
+    }
+
     .logo {
         margin-top: 16pt;
         width: 100%;
         position: relative;
     }
-}
 
-@media (max-width: 600pt) {
     .logo img {
         width: 100%;
         height: 100%;
@@ -90,17 +93,25 @@ header {
         align-items: center;
         text-align: center;
         margin-left: 32pt;
-    }
-}
-
-@media (max-width: 600pt) {
-    .logo img {
         margin: 0 auto;
     }
 }
 
 nav {
     font-weight: 400;
+    font-size: 1.5em;
+}
+
+nav ul {
+    width: 32vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 5pt;
+}
+
+nav ul li {
+    padding: 5pt;
 }
 
 @media (max-width: 600pt) {
@@ -113,22 +124,11 @@ nav {
         text-align: center;
         padding: 0 52pt;
     }
-}
 
-@media (max-width: 600pt) {
     nav ul li {
         padding-bottom: 4px;
     }
-}
 
-nav ul {
-    width: 32vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-@media (max-width: 600pt) {
     nav ul {
         flex-direction: column;
     }
@@ -139,7 +139,23 @@ nav ul {
     margin-top: 148pt;
 }
 
+#about-us h1 {
+    font-family: 'Playfair Display';
+    text-align: center;
+    margin-bottom: 20pt;
+    word-wrap: break-word;
+}
+
+#about-us .grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 720pt;
+    margin: 0 auto;
+}
+
 #about-us .icons {
+    font-size: 3em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -148,48 +164,68 @@ nav ul {
     color: #1ec43d;
 }
 
-@media (max-width: 480pt) {
+#about-us .desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 125pt;
+    width: 80vw;
+    padding: 5pt;
+}
+
+@media (max-width: 720pt) {
+    #about-us {
+        margin-top: 120pt;
+    }
+
     #about-us .icons {
         display: none;
     }
 }
 
-#about-us .desc {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 125px;
-    width: 80vw;
-    padding: 5px;
-}
+@media (max-width: 600pt) {
 
-/* Continnue from here */
+    #about-us .icons {
+        display: none;
+    }
 
-@media (max-width: 550px) {
     #about-us .desc {
         width: 100%;
         text-align: center;
         padding: 0;
-        height: 150px;
-    }
-}
-
-@media (max-width: 650px) {
-    [id="about-us"] {
-        margin-top: 0;
+        height: 150pt;
     }
 }
 
 /* Promo Video */
 #promo-video {
-    margin-top: 200px;
+    margin-top: 50pt;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
-#video iframe {
-    max-width: 560px;
-    width: 100%;
+#promo-video h1 {
+    font-family: 'Playfair Display';
+    text-align: center;
+    margin-bottom: 20pt;
+    word-wrap: break-word;
+}
+
+#promo-video iframe {
+    margin: 0 auto;
+    max-width: 720pt;
+}
+
+@media (max-width: 600pt) {
+
+    #promo-video {
+        margin-top: 180pt;
+    }
+
+    #promo-video iframe {
+        width: 100%;
+    }
 }
 
 /* Newsletter */
@@ -199,48 +235,64 @@ nav ul {
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 200px;
-    margin-top: 50px;
+    height: 200pt;
+    margin-top: 100pt;
 }
 
-#newsletter h2 {
-    margin-bottom: 20px;
+#newsletter h1 {
+    font-family: 'Playfair Display';
+    margin-bottom: 5pt;
     word-wrap: break-word;
 }
 
+#newsletter h2 {
+    font-family: 'PLayfair Display';
+    margin-bottom: 12pt;
+    word-wrap: break-word;
+}
+
+#newsletter form {
+    margin-top: 10pt;
+}
+
 #newsletter input[type="email"] {
-    max-width: 275px;
+    max-width: 275pt;
+    height: 30pt;
     width: 100%;
     padding: .5em;
     text-align: center;
 }
 
 #newsletter input[type="submit"] {
-    max-width: 120px;
+    max-width: 120pt;
     width: 100%;
-    height: 60px;
-    margin: 30px 0;
+    height: 30pt;
+    margin: 10pt 0;
     border: 1;
     background-color: #f8f9fa;
 }
 
 #newsletter input[type="submit"]:hover {
+    color: #f8f9fa;
     background-color: #1ec43d;
     transition: background-color .3s;
 }
 
-@media (max-width: 650px) {
-    [id="newsletter"] {
-        margin-top: 120px;
+@media (max-width: 480pt) {
+    #newsletter {
+        margin-top: 120pt;
     }
 }
 
 /* Reservations */
 #reservations {
     margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    max-width: 720pt;
 }
 
 #reservations #morning {
@@ -250,8 +302,8 @@ nav ul {
     text-align: center;
     width: calc(100% / 3);
     margin: 10px;
-    border: 1px solid #000;
-    border-radius: 3px;
+    border: 1px solid #212529;
+    border-radius: 8pt;
 }
 
 #reservations #lunch {
@@ -261,8 +313,8 @@ nav ul {
     text-align: center;
     width: calc(100% / 3);
     margin: 10px;
-    border: 1px solid #000;
-    border-radius: 3px;
+    border: 1px solid #212529;
+    border-radius: 8pt;
 }
 
 #reservations #dinner {
@@ -272,26 +324,32 @@ nav ul {
     text-align: center;
     width: calc(100% / 3);
     margin: 10px;
-    border: 1px solid #000;
-    border-radius: 3px;
+    border: 1px solid #212529;
+    border-radius: 8pt;
 }
 
 #reservations .menu-title {
     background-color: #1ec43d;
-    color: #000;
-    padding: 15px 0;
+    color: #f8f9fa;
+    padding: 15pt 0;
     width: 100%;
     text-transform: uppercase;
+    font-family: 'Dancing Script';
     font-weight: 800;
+    font-size: 24pt;
+    border-top-left-radius: 7pt;
+    border-top-right-radius: 7pt;
 }
 
 #reservations h2 {
+    font-family: 'Dancing Script';
     text-align: left;
-    margin-top: 15px;
+    margin-top: 15pt;
 }
 
 #reservations .menu-list {
     text-align: left;
+    font-family: 'Dosis';
 }
 
 #reservations ol {
@@ -331,4 +389,35 @@ nav ul {
     width: 0 auto;
     text-align: center;
     margin-top: 60px;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 30pt;
+    background-color: #212529;
+    padding: 20pt;
+}
+
+footer .grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer ul {
+    display: flex;
+    justify-content: flex-start;
+}
+
+footer ul li {
+    padding: 0 10pt;
+}
+
+footer span {
+    margin-top: 10pt;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1em;
+    color: #f8f9fa;
 }
